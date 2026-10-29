@@ -1,0 +1,679 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Deva Sangeetha Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Digital Marketing Executive. SEO, AEO & GEO Specialist | Content Writer | Meta & Google Ads">
+<meta name="theme-color" content="#050a1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: one long dark-blue page. Sticky glass nav, split hero (text left, framed photo right),
+   alternating achievement rows pairing each result with its Google screenshots, icon tile grids for tools. */
+:root{
+  --ink:#030714;          /* near-black navy */
+  --navy:#07122e;         /* deep navy surface */
+  --navy-2:#0b1c45;       /* raised surface */
+  --blue:#2f6bff;         /* primary blue */
+  --cyan:#38d6ff;         /* highlight */
+  --violet:#8a63ff;       /* gradient partner */
+  --text:#f2f7ff;         /* main text */
+  --soft:#bcd5ff;         /* secondary text, light blue (no grey) */
+  --line:rgba(110,165,255,.22);
+  --glass:rgba(14,30,72,.55);
+  --grad:linear-gradient(110deg,var(--cyan),var(--blue) 45%,var(--violet));
+  --f-display:'Syne','Manrope',system-ui,sans-serif;
+  --f-body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+  color-scheme:dark;
+}
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden;background:var(--ink)}
+body{
+  background:var(--ink);color:var(--text);font-family:var(--f-body);font-size:16px;line-height:1.7;
+  overflow-x:hidden;touch-action:manipulation;width:100%;
+  padding-left:max(0px,env(safe-area-inset-left,0px));padding-right:max(0px,env(safe-area-inset-right,0px));
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:90;background:var(--ink)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:8px}
+::selection{background:var(--blue);color:#fff}
+
+/* ambient background */
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(120% 80% at 50% -10%,#0c1f55 0%,var(--ink) 60%)}
+.bg i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:drift 22s ease-in-out infinite alternate}
+.bg i:nth-child(1){width:46vmax;height:46vmax;left:-14vmax;top:-10vmax;background:#1d4fff}
+.bg i:nth-child(2){width:38vmax;height:38vmax;right:-12vmax;top:22vh;background:#6a3dff;animation-duration:28s;opacity:.34}
+.bg i:nth-child(3){width:34vmax;height:34vmax;left:20vw;bottom:-18vmax;background:#00b4ff;animation-duration:32s;opacity:.28}
+.bg::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(110,165,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(110,165,255,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(70% 60% at 50% 30%,#000,transparent);mask-image:radial-gradient(70% 60% at 50% 30%,#000,transparent)}
+@keyframes drift{to{transform:translate3d(6vmax,5vmax,0) scale(1.15)}}
+
+.progress{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--grad);z-index:100}
+
+/* custom cursor */
+.cur-dot,.cur-ring{position:fixed;left:0;top:0;pointer-events:none;z-index:1000;border-radius:50%;opacity:0;transition:opacity .25s}
+.cur-dot{width:8px;height:8px;margin:-4px 0 0 -4px;background:var(--cyan);box-shadow:0 0 14px 2px var(--cyan)}
+.cur-ring{width:38px;height:38px;margin:-19px 0 0 -19px;border:1.5px solid rgba(56,214,255,.75);transition:opacity .25s,width .25s,height .25s,margin .25s,background .25s,border-color .25s}
+html.has-cursor .cur-dot,html.has-cursor .cur-ring{opacity:1}
+html.has-cursor,html.has-cursor *{cursor:none!important}
+.cur-ring.hot{width:64px;height:64px;margin:-32px 0 0 -32px;background:rgba(47,107,255,.2);border-color:var(--violet)}
+.cur-ring.down{width:28px;height:28px;margin:-14px 0 0 -14px;background:rgba(56,214,255,.35)}
+.spark{position:fixed;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;pointer-events:none;z-index:999;background:var(--cyan);animation:spark .7s ease-out forwards}
+@keyframes spark{to{transform:translate(var(--dx),var(--dy)) scale(0);opacity:0}}
+
+/* layout helpers */
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:clamp(56px,9vw,104px)}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--grad);border-radius:2px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.1;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;margin-top:12px}
+.lead{color:var(--soft);max-width:62ch;margin-top:14px;font-size:1.04rem}
+.sec-head{margin-bottom:clamp(30px,5vw,52px)}
+.grad-text{background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:-200% 0}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:rgba(3,7,20,.72);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{font-family:var(--f-display);font-weight:800;font-size:1.22rem;display:flex;align-items:center;gap:10px;min-width:0}
+.logo b{width:34px;height:34px;flex:none;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-size:.95rem;color:#fff;box-shadow:0 6px 22px rgba(47,107,255,.55)}
+.logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.links{display:flex;gap:4px;align-items:center}
+.links a{padding:8px 13px;border-radius:999px;font-weight:600;font-size:.92rem;color:var(--soft);transition:.25s;position:relative}
+.links a:hover,.links a.on{color:#fff;background:rgba(47,107,255,.24)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--glass);place-items:center}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:20px;height:2px;background:var(--text);border-radius:2px;transition:.3s;position:relative}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-btn[aria-expanded=true] span{background:transparent}
+.menu-btn[aria-expanded=true] span::before{top:0;transform:rotate(45deg)}
+.menu-btn[aria-expanded=true] span::after{top:0;transform:rotate(-45deg)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:14px;font-weight:700;font-size:.98rem;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s,background .25s;isolation:isolate}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.primary{background:var(--grad);background-size:160% 100%;color:#fff;box-shadow:0 10px 30px rgba(47,107,255,.5)}
+.btn.primary::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.4) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s;z-index:-1}
+.btn.primary:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(56,214,255,.45);background-position:100% 0}
+.btn.primary:hover::after{transform:translateX(120%)}
+.btn.ghost{border:1.5px solid var(--line);background:var(--glass);color:var(--text)}
+.btn.ghost:hover{transform:translateY(-3px);border-color:var(--cyan);box-shadow:0 12px 30px rgba(56,214,255,.2)}
+
+/* hero */
+.hero{padding-block:clamp(36px,7vw,84px) clamp(48px,7vw,84px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,6vw,80px);align-items:center}
+.hello{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--glass);font-family:var(--f-mono);font-size:.8rem;color:var(--soft);letter-spacing:.04em}
+.hello i{width:8px;height:8px;border-radius:50%;background:#35f0a8;box-shadow:0 0 0 0 rgba(53,240,168,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(53,240,168,0)}100%{box-shadow:0 0 0 0 rgba(53,240,168,0)}}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.9rem);font-weight:800;margin-top:22px}
+.hero .role{margin-top:18px;font-size:clamp(1.02rem,2vw,1.28rem);font-weight:700;color:var(--cyan)}
+.hero .tag{margin-top:10px;color:var(--soft);font-size:1.06rem;max-width:54ch}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:40px}
+.stat{padding:16px 14px;border-radius:16px;border:1px solid var(--line);background:var(--glass);transition:.3s}
+.stat:hover{transform:translateY(-4px);border-color:var(--cyan)}
+.stat b{display:block;font-family:var(--f-display);font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
+.stat span{display:block;font-size:.78rem;color:var(--soft);margin-top:6px;line-height:1.35}
+
+/* photo frame with orbiting gradient border */
+.photo{justify-self:center;width:100%;max-width:408px;position:relative}
+.photo::before{content:"";position:absolute;inset:-6%;background:conic-gradient(from var(--a),var(--cyan),var(--blue),var(--violet),var(--cyan));filter:blur(46px);opacity:.5;animation:spin 7s linear infinite;border-radius:40px}
+.frame{position:relative;padding:5px;border-radius:30px;background:conic-gradient(from var(--a),var(--cyan),var(--blue),var(--violet),#fff,var(--cyan));animation:spin 7s linear infinite;box-shadow:0 30px 80px rgba(0,10,50,.7)}
+@keyframes spin{to{--a:360deg}}
+.frame-in{border-radius:26px;overflow:hidden;background:var(--ink)}
+.frame-in img{width:100%;height:auto;aspect-ratio:408/612;object-fit:contain;transition:transform .6s}
+.photo:hover .frame-in img{transform:scale(1.025)}
+.orbit{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 20px 4px var(--cyan);top:8%;right:-6px;animation:bob 3.4s ease-in-out infinite alternate}
+.orbit.b{top:auto;bottom:12%;right:auto;left:-6px;background:var(--violet);box-shadow:0 0 20px 4px var(--violet);animation-delay:-1.7s}
+@keyframes bob{to{transform:translateY(26px)}}
+
+/* generic card */
+.card{position:relative;border:1px solid var(--line);border-radius:22px;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow:hidden;transition:transform .35s,border-color .35s,box-shadow .35s}
+.card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(56,214,255,.16),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{transform:translateY(-5px);border-color:rgba(56,214,255,.55);box-shadow:0 22px 60px rgba(8,30,110,.55)}
+.card:hover::before{opacity:1}
+
+/* profile */
+.profile-card{padding:clamp(24px,4vw,44px);font-size:clamp(1.05rem,1.8vw,1.22rem);line-height:1.8;color:var(--text)}
+
+/* experience */
+.timeline{position:relative;display:grid;gap:26px;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--blue),var(--violet));border-radius:2px}
+.job{padding:clamp(22px,3.4vw,36px);position:relative}
+.job::after{content:"";position:absolute;left:-33px;top:34px;width:16px;height:16px;border-radius:50%;background:var(--ink);border:3px solid var(--cyan);box-shadow:0 0 0 6px rgba(56,214,255,.15)}
+.job{overflow:visible}
+.job-top{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;align-items:flex-start}
+.job h3{font-size:clamp(1.15rem,2.4vw,1.5rem);font-weight:700;min-width:0}
+.date{font-family:var(--f-mono);font-size:.78rem;padding:6px 12px;border-radius:999px;background:rgba(47,107,255,.22);border:1px solid var(--line);color:var(--cyan);white-space:nowrap}
+.job .title{margin-top:8px;font-weight:800;color:var(--cyan);font-size:1.05rem}
+.job ul{margin-top:14px;display:grid;gap:12px;list-style:none}
+.job li{position:relative;padding-left:26px;color:var(--text)}
+.job li::before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:10px;border-radius:3px;background:var(--grad);transform:rotate(45deg)}
+
+/* skills */
+.skill-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.skill{padding:26px}
+.skill h3{font-size:1.25rem;font-weight:700;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:7px 13px;border-radius:999px;font-size:.86rem;font-weight:600;border:1px solid var(--line);background:rgba(47,107,255,.14);color:var(--text);transition:.25s}
+.chip:hover{background:var(--grad);border-color:transparent;transform:translateY(-3px) scale(1.04);box-shadow:0 8px 20px rgba(47,107,255,.5)}
+
+/* achievements */
+.ach-list{display:grid;gap:clamp(24px,4vw,40px)}
+.ach{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(18px,3vw,28px);padding:clamp(18px,3vw,30px);align-items:start}
+.ach-text{display:flex;flex-direction:row;align-items:center;gap:14px clamp(20px,4vw,48px);min-width:0}
+.badge{flex:none;font-family:var(--f-display);font-weight:800;font-size:clamp(1.9rem,3.8vw,2.7rem);line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge small{display:block;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;-webkit-text-fill-color:var(--soft);color:var(--soft);margin-top:8px;font-weight:600}
+.ach-text p{font-size:1.1rem;color:var(--text);min-width:0;flex:1 1 280px;max-width:70ch}
+.shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;min-width:0}
+.shots .shot:first-child,.shots.n1 .shot,.shots.n2 .shot{grid-column:1/-1}
+.shot{position:relative;display:block;width:100%;text-align:left;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--ink);transition:.35s}
+.shot .bar{display:flex;align-items:center;gap:6px;padding:8px 12px;background:var(--navy-2);border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:.7rem;color:var(--soft);min-width:0}
+.shot .bar i{width:9px;height:9px;border-radius:50%;flex:none}
+.shot .bar i:nth-child(1){background:#ff6b8b}.shot .bar i:nth-child(2){background:#ffd166}.shot .bar i:nth-child(3){background:#35f0a8}
+.shot .bar em{font-style:normal;margin-left:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.shot img{width:100%;height:auto;aspect-ratio:1900/900;object-fit:cover;object-position:top left;transition:transform .6s}
+.shot:hover{border-color:var(--cyan);box-shadow:0 14px 40px rgba(56,214,255,.28);transform:translateY(-3px)}
+.shot:hover img{transform:scale(1.04)}
+.shot .zoom{position:absolute;right:12px;bottom:12px;width:38px;height:38px;border-radius:50%;background:var(--grad);display:grid;place-items:center;opacity:0;transform:scale(.6);transition:.3s;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.shot .zoom svg{width:18px;height:18px}
+.shot:hover .zoom,.shot:focus-visible .zoom{opacity:1;transform:none}
+@media (hover:none){.shot .zoom{opacity:1;transform:none}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:500;background:rgba(2,6,18,.94);backdrop-filter:blur(8px);display:none;flex-direction:column;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) 16px max(16px,env(safe-area-inset-bottom,0px))}
+.lb.open{display:flex;animation:fade .3s}
+@keyframes fade{from{opacity:0}}
+.lb img{max-width:100%;max-height:78vh;width:auto;height:auto;border-radius:12px;border:1px solid var(--line);box-shadow:0 30px 100px rgba(0,30,120,.6);touch-action:pan-y}
+.lb-cap{margin-top:16px;font-family:var(--f-mono);font-size:.82rem;color:var(--soft);text-align:center}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;background:var(--glass);border:1px solid var(--line);display:grid;place-items:center;font-size:1.4rem;transition:.25s}
+.lb button:hover{background:var(--grad);border-color:transparent}
+.lb .x{top:max(16px,env(safe-area-inset-top,0px));right:16px}
+.lb .pv{left:12px;top:50%;margin-top:-24px}.lb .nx{right:12px;top:50%;margin-top:-24px}
+
+/* tools */
+.tool-group+.tool-group{margin-top:44px}
+.tool-group h3{font-size:1.3rem;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.tool-group h3::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:14px}
+.tool{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:16px;border:1px solid var(--line);background:var(--glass);transition:.3s;min-width:0;position:relative;overflow:hidden}
+.tool .ic{width:42px;height:42px;flex:none;border-radius:13px;background:linear-gradient(145deg,#ffffff,#d9e8ff);display:grid;place-items:center;transition:transform .4s cubic-bezier(.3,1.6,.5,1);box-shadow:0 6px 16px rgba(0,0,0,.35)}
+.tool .ic svg{width:26px;height:26px}
+.tool .nm{font-weight:700;font-size:.86rem;line-height:1.3;min-width:0;overflow-wrap:break-word}
+.tool:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:0 16px 40px rgba(56,214,255,.25);background:rgba(20,48,120,.6)}
+.tool:hover .ic{transform:rotate(-8deg) scale(1.14)}
+
+/* projects */
+.proj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.proj{padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.proj h3{font-size:1.3rem;font-weight:700}
+.proj .site{font-family:var(--f-mono);font-size:.84rem;color:var(--cyan);display:inline-flex;align-items:center;gap:8px;align-self:flex-start;border-bottom:1px solid transparent;transition:.25s;overflow-wrap:anywhere}
+.proj .site:hover{border-color:var(--cyan)}
+.proj p{color:var(--text)}
+.proj h4{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:600}
+.sites{display:flex;flex-wrap:wrap;gap:8px}
+.sites a{padding:7px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(47,107,255,.14);font-size:.84rem;font-weight:600;transition:.25s;overflow-wrap:anywhere}
+.sites a:hover{background:var(--grad);border-color:transparent;transform:translateY(-3px)}
+
+/* education */
+.edu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.edu{padding:28px;display:flex;flex-direction:column;gap:6px}
+.edu h3{font-size:1.3rem;font-weight:700}
+.edu .col{color:var(--soft);font-weight:600}
+.edu .meta{margin-top:10px;font-family:var(--f-mono);font-size:.84rem;color:var(--cyan)}
+
+/* contact */
+.contact-card{padding:clamp(26px,5vw,56px);text-align:left;background:linear-gradient(135deg,rgba(47,107,255,.28),rgba(138,99,255,.2) 60%,rgba(56,214,255,.14));}
+.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+.c-item{display:flex;flex-direction:column;gap:8px;padding:18px;border-radius:16px;border:1px solid var(--line);background:rgba(3,7,20,.55);transition:.3s;min-width:0}
+.c-item:hover{border-color:var(--cyan);transform:translateY(-4px)}
+.c-item label{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.c-item .val{font-weight:700;overflow-wrap:anywhere;user-select:all;-webkit-user-select:all}
+.c-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.mini{padding:7px 13px;border-radius:10px;font-size:.82rem;font-weight:700;border:1px solid var(--line);background:rgba(47,107,255,.2);transition:.25s}
+.mini:hover{background:var(--grad);border-color:transparent}
+footer{padding:34px 0 46px;border-top:1px solid var(--line);text-align:center;color:var(--soft);font-size:.9rem}
+.totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;background:var(--grad);display:grid;place-items:center;z-index:70;box-shadow:0 10px 30px rgba(47,107,255,.55);opacity:0;transform:translateY(20px);pointer-events:none;transition:.3s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop svg{width:20px;height:20px}
+
+/* responsive */
+@media (max-width:1020px){
+  .skill-grid,.proj-grid{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .menu-btn{display:grid}
+  .links{position:absolute;left:0;right:0;top:68px;flex-direction:column;align-items:stretch;gap:4px;padding:14px max(20px,env(safe-area-inset-left,0px));background:rgba(3,7,20,.97);border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;visibility:hidden;transition:.3s}
+  .links.open{transform:none;opacity:1;visibility:visible}
+  .links a{padding:13px 16px;font-size:1rem}
+  .hero .wrap{grid-template-columns:1fr}
+  .photo{order:-1;max-width:min(340px,78vw)}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .ach-text{flex-direction:column;align-items:flex-start}
+  .skill-grid,.proj-grid,.edu-grid{grid-template-columns:1fr}
+  .timeline{padding-left:26px}
+  .job::after{left:-25px}
+  .tools{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tool{padding:8px}
+  .tool .ic{width:36px;height:36px;border-radius:11px}
+  .tool .ic svg{width:21px;height:21px}
+  .tool .nm{font-size:.76rem}
+  .btn{flex:1 1 100%}
+  .shots{gap:10px;grid-template-columns:minmax(0,1fr)}
+  .tool{gap:8px}
+  .lb .pv{left:6px}.lb .nx{right:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cur-dot" id="curDot" aria-hidden="true"></div>
+<div class="cur-ring" id="curRing" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Deva Sangeetha, back to top"><b>DS</b><span>Deva Sangeetha</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span></button>
+    <nav class="links" id="links" aria-label="Sections">
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#tools">Tools</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="hello rv"><i></i>Deva Sangeetha</span>
+      <h1 class="rv"><span class="grad-text">Digital Marketing Executive</span></h1>
+      <p class="role rv">SEO, AEO &amp; GEO Specialist | Content Writer | Meta &amp; Google Ads</p>
+      <p class="tag rv">Driving Digital Growth Through SEO, Content &amp; Paid Marketing</p>
+      <div class="cta rv">
+        <a class="btn primary" href="assets/Deva_Sangeetha_Resume.pdf" target="_blank" rel="noopener" id="resumeBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>Download Resume</a>
+        <a class="btn ghost" href="#achievements">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg>View Achievements</a>
+        <a class="btn ghost" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4zM4 7l8 6 8-6"/></svg>Contact</a>
+      </div>
+      <div class="stats rv">
+        <div class="stat"><b data-count="2" data-suffix="+">2+</b><span>years of experience</span></div>
+        <div class="stat"><b data-count="155" data-suffix="K+">155K+</b><span>Google Search impressions</span></div>
+        <div class="stat"><b data-count="15" data-suffix="+">15+</b><span>blog articles in Google AI Overviews</span></div>
+        <div class="stat"><b>#1</b><span>on Google for target keywords</span></div>
+      </div>
+    </div>
+    <div class="photo rv">
+      <div class="frame"><div class="frame-in"><img src="assets/profile.jpg" width="408" height="612" alt="Deva Sangeetha" fetchpriority="high"></div></div>
+      <span class="orbit"></span><span class="orbit b"></span>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Profile</div><h2>Profile</h2></div>
+    <div class="card profile-card rv">I’m a Digital Marketing Executive with 2+ years of experience in SEO, AEO, GEO, content writing, and paid advertising. I specialize in improving search visibility, creating engaging, SEO-friendly content, and managing Meta and Google Ads campaigns. With a data-driven approach and a focus on measurable results, I help businesses strengthen their online presence, reach the right audience, and support sustainable digital growth.</div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Career</div><h2>Experience</h2>
+      <p class="lead">A results-driven professional journey defined by diverse responsibilities, measurable contributions, and continuous career growth.</p></div>
+    <div class="timeline">
+      <article class="card job rv">
+        <div class="job-top"><h3>Sihi Heritage Soil Industries Pvt. Ltd. – Chennai</h3><span class="date">September 2025–September 2026</span></div>
+        <p class="title">SEO Executive and Content Writer</p>
+        <ul>
+          <li>Develop and maintain SEO-focused website content for blogs, product pages, and category pages based on search demand, customer intent, and brand requirements.</li>
+          <li>Review website structure, content quality, indexation, internal navigation, and page-level SEO issues to improve overall search performance and usability.</li>
+          <li>Supported Meta Ads campaigns through ad copy creation, audience targeting, campaign monitoring, and performance analysis to improve audience reach and campaign effectiveness.</li>
+        </ul>
+      </article>
+      <article class="card job rv">
+        <div class="job-top"><h3>G2G Technologies – Tirunelveli</h3><span class="date">July 2024–July 2025</span></div>
+        <p class="title">Digital Marketing Executive</p>
+        <ul>
+          <li>Managed end-to-end SEO projects for clients in different sectors, including keyword research, WordPress website development, content publishing and regular website improvements.</li>
+          <li>Improved local search presence through location-based content, business directory submissions, quality backlink building, and consistent business information across online platforms.</li>
+          <li>Managed Google Ads Search campaigns and Meta Ads Lead Generation, Engagement, and Sales campaigns, including ad copy creation, audience targeting, campaign setup, and performance monitoring.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Capabilities</div><h2>Skills</h2>
+      <p class="lead">A versatile combination of strategic, analytical, and creative capabilities developed through practical experience and continuous learning.</p></div>
+    <div class="skill-grid">
+      <div class="card skill rv"><h3>SEO, AEO &amp; GEO</h3>
+        <p class="chips" data-split>Keyword Research | Search Intent Analysis | On-Page SEO | Off-Page SEO | Technical SEO | Local SEO | Competitor Analysis | Link Building | Backlink Outreach | Guest Posting | Website Audits | E-E-A-T Optimization | Answer Engine Optimization (AEO) | Generative Engine Optimization (GEO)</p></div>
+      <div class="card skill rv"><h3>Content Writing</h3>
+        <p class="chips" data-split>SEO Content Writing | Blog &amp; Article Writing | Website Content Writing | Content Strategy | Email &amp; Ad Copywriting | Product Description Writing | Social Media Content | Content Editing &amp; Proofreading</p></div>
+      <div class="card skill rv"><h3>Paid Advertising</h3>
+        <p class="chips" data-split>Meta Ads | Google Ads | Campaign Setup | Campaign Management | Audience Targeting | Lead Generation | Social Media Marketing | A/B Testing | Retargeting | Conversion Tracking | Bidding Strategy | Budget Optimization | Campaign Performance Tracking | CTR, CPC &amp; ROAS Analysis</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Results</div><h2>Achievements</h2>
+      <p class="lead">Proven success in improving search rankings, expanding organic visibility, and securing prominent placement across traditional and AI-driven search results.</p></div>
+    <div class="ach-list">
+
+      <article class="card ach rv">
+        <div class="ach-text"><div class="badge">Position 2<small>Local search</small></div>
+          <p>Achieved position 2 rankings for the target keywords “Best Taxi Service in Tirupur” and “Call Taxi Tirupur,” strengthening the business’s visibility in local search results.</p></div>
+        <div class="shots n1">
+          <button class="shot" data-shot data-cap="Google search: tirupur call taxi" aria-label="Open screenshot: Google search for tirupur call taxi"><div class="bar"><i></i><i></i><i></i><em>Google · tirupur call taxi</em></div><img loading="lazy" width="1905" height="893" src="assets/shots/call-taxi-tirupur.webp" alt="Google search results for tirupur call taxi showing tirupurtaxi.in at position 2"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+        </div>
+      </article>
+
+      <article class="card ach rv">
+        <div class="ach-text"><div class="badge">Position 1<small>Construction</small></div>
+          <p>Ranked a construction company website in the position 1 on Google for the keyword “Construction Company in Tirunelveli.”</p></div>
+        <div class="shots n1">
+          <button class="shot" data-shot data-cap="Google search: Construction Company in Tirunelveli" aria-label="Open screenshot: Google search for Construction Company in Tirunelveli"><div class="bar"><i></i><i></i><i></i><em>Google · Construction Company in Tirunelveli</em></div><img loading="lazy" width="1882" height="901" src="assets/shots/construction-tirunelveli.webp" alt="Google search results for Construction Company in Tirunelveli showing smarchbuilders.co.in at position 1"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+        </div>
+      </article>
+
+      <article class="card ach rv">
+        <div class="ach-text"><div class="badge">Position 1<small>UK client</small></div>
+          <p>Secured the position 1 on Google for the UK-based client’s target keyword “Scaffolding Birmingham.”</p></div>
+        <div class="shots n1">
+          <button class="shot" data-shot data-cap="Google search: Scaffolding Birmingham" aria-label="Open screenshot: Google search for Scaffolding Birmingham"><div class="bar"><i></i><i></i><i></i><em>Google · Scaffolding Birmingham</em></div><img loading="lazy" width="1891" height="903" src="assets/shots/scaffolding-birmingham.webp" alt="Google search results for Scaffolding Birmingham showing birminghamscaffolding.com at position 1"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+        </div>
+      </article>
+
+      <article class="card ach rv">
+        <div class="ach-text"><div class="badge">26 → 1<small>Google AI Overviews</small></div>
+          <p>Elevated “Best Kumkumadi Tailam for Face” from position 26 to position 1, with the keywords featured in Google AI Overviews.</p></div>
+        <div class="shots n2">
+          <button class="shot" data-shot data-cap="Google search: Best Kumkumadi Tailam for Face, position 1" aria-label="Open screenshot: Google search for Best Kumkumadi Tailam for Face"><div class="bar"><i></i><i></i><i></i><em>Google · Best Kumkumadi Tailam for Face</em></div><img loading="lazy" width="1896" height="898" src="assets/shots/kumkumadi-serp.webp" alt="Google search results for Best Kumkumadi Tailam for Face showing surulchettinad.com at position 1"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+          <button class="shot" data-shot data-cap="Google AI Mode: Kumkumadi Tailam recommendations citing Surul Chettinad" aria-label="Open screenshot: Google AI answer for Kumkumadi Tailam"><div class="bar"><i></i><i></i><i></i><em>Google AI · Kumkumadi Tailam</em></div><img loading="lazy" width="1898" height="878" src="assets/shots/kumkumadi-ai.webp" alt="Google AI answer about Kumkumadi Tailam featuring Navarasa Swarna by Surul Chettinad"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+        </div>
+      </article>
+
+      <article class="card ach rv">
+        <div class="ach-text"><div class="badge">71 → 3<small>AI-generated results</small></div>
+          <p>Advanced “Hair Washing Powder” from position 71 to position 3 and secured its inclusion in AI-generated search results.</p></div>
+        <div class="shots n2">
+          <button class="shot" data-shot data-cap="Google search: Hair Washing Powder, position 3" aria-label="Open screenshot: Google search for Hair Washing Powder"><div class="bar"><i></i><i></i><i></i><em>Google · Hair Washing Powder</em></div><img loading="lazy" width="1905" height="891" src="assets/shots/hair-washing-powder-serp.webp" alt="Google search results for Hair Washing Powder showing Surul Chettinad Herbal Hair Wash Powder at position 3"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+          <button class="shot" data-shot data-cap="Google AI Mode: herbal hair wash powder answer citing Surul Chettinad" aria-label="Open screenshot: Google AI answer for herbal hair wash powder"><div class="bar"><i></i><i></i><i></i><em>Google AI · Herbal hair wash powder</em></div><img loading="lazy" width="1887" height="902" src="assets/shots/hair-washing-powder-ai.webp" alt="Google AI answer on how to use herbal hair wash powder citing Surul Chettinad"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+        </div>
+      </article>
+
+      <article class="card ach rv">
+        <div class="ach-text"><div class="badge">155K+<small>Impressions · 15+ AI Overviews</small></div>
+          <p>Generated over 155K Google Search impressions and positioned more than 15+ blog articles in Google AI Overviews.</p></div>
+        <div class="shots n3">
+          <button class="shot" data-shot data-cap="Google search: kasturi manjal uses, Surul Chettinad article" aria-label="Open screenshot: Google search for kasturi manjal uses"><div class="bar"><i></i><i></i><i></i><em>Google · kasturi manjal uses</em></div><img loading="lazy" width="1872" height="898" src="assets/shots/kasturi-manjal-uses.webp" alt="Google search results for kasturi manjal uses with the Surul Chettinad guide ranking"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+          <button class="shot" data-shot data-cap="Google AI answer: Kasturi Manjal skincare uses citing Surul Chettinad" aria-label="Open screenshot: Google AI answer for kasturi manjal skincare uses"><div class="bar"><i></i><i></i><i></i><em>Google AI · kasturi manjal uses</em></div><img loading="lazy" width="1887" height="908" src="assets/shots/kasturi-manjal-ai.webp" alt="Google AI answer on Kasturi Manjal skincare uses citing Surul Chettinad"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+          <button class="shot" data-shot data-cap="Google AI Overview: kasturi manjal benefits citing Surul Chettinad" aria-label="Open screenshot: Google AI Overview for kasturi manjal benefits"><div class="bar"><i></i><i></i><i></i><em>Google · kasturi manjal benefits</em></div><img loading="lazy" width="1897" height="891" src="assets/shots/kasturi-manjal-benefits.webp" alt="Google AI Overview for kasturi manjal benefits citing Surul Chettinad"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></span></button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Stack</div><h2>Tools</h2>
+      <p class="lead">Hands-on experience with industry-standard SEO, marketing, analytics, and creative tools.</p></div>
+    <div class="tool-group rv"><h3>SEO, AEO &amp; GEO Tools</h3>
+      <div class="tools" data-tools="Google Search Console|Google Analytics 4 (GA4)|Google Keyword Planner|Google Trends|Ahrefs|Semrush|Screaming Frog SEO Spider|Moz|AnswerThePublic|AlsoAsked|Google Business Profile|Google Rich Results Test|PageSpeed Insights|Rank Math SEO"></div></div>
+    <div class="tool-group rv"><h3>Content Writing Tools</h3>
+      <div class="tools" data-tools="WordPress|Grammarly|Hemingway Editor|Duplichecker|ZeroGPT|Canva|Claude"></div></div>
+    <div class="tool-group rv"><h3>Paid Advertising Tools</h3>
+      <div class="tools" data-tools="Google Ads|Google Ads Keyword Planner|Google Tag Manager|Meta Ads Manager|Meta Business Suite"></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Work</div><h2>Projects</h2></div>
+    <div class="proj-grid">
+      <article class="card proj rv">
+        <h3>G2G Technologies</h3>
+        <a class="site" href="https://g2gtechnologies.com" target="_blank" rel="noopener">g2gtechnologies.com ↗</a>
+        <p>Handled end-to-end digital marketing activities for the company and its client websites, from website development and SEO implementation to social media management and paid advertising across Google Ads and Meta Ads.</p>
+        <h4>Client websites:</h4>
+        <div class="sites">
+          <a href="https://tirupurtaxi.in" target="_blank" rel="noopener">tirupurtaxi.in</a>
+          <a href="https://godrejkitchndecor.com" target="_blank" rel="noopener">godrejkitchndecor.com</a>
+          <a href="https://adrconstructions.com" target="_blank" rel="noopener">adrconstructions.com</a>
+          <a href="https://csijac.edu.in" target="_blank" rel="noopener">csijac.edu.in</a>
+          <a href="https://smarchbuilders.co.in" target="_blank" rel="noopener">smarchbuilders.co.in</a>
+          <a href="https://birminghamscaffolding.com" target="_blank" rel="noopener">birminghamscaffolding.com</a>
+          <a href="https://revathyconstructionschennai.in" target="_blank" rel="noopener">revathyconstructionschennai.in</a>
+        </div>
+      </article>
+      <article class="card proj rv">
+        <h3>Digivaar Tech Blog</h3>
+        <a class="site" href="https://digivaartech.com/blogs" target="_blank" rel="noopener">digivaartech.com/blogs ↗</a>
+        <p>Researched and published SEO-friendly technology blogs aligned with search intent and relevant keywords, helping content gain organic search visibility and placements in Google AI Overviews.</p>
+      </article>
+      <article class="card proj rv">
+        <h3>SIHI Heritage Soil Industries Pvt. Ltd.</h3>
+        <a class="site" href="https://surulchettinad.com" target="_blank" rel="noopener">surulchettinad.com ↗</a>
+        <p>Managed SEO and content across website pages, blogs, product descriptions, and category pages. Created social media content and ran Meta Ads campaigns focused on generating leads and driving product sales.</p>
+      </article>
+    </div>
+
+    <div class="sec-head rv" style="margin-top:clamp(56px,8vw,90px)"><div class="eyebrow">Sectors</div><h2>Industry Experience</h2>
+      <p class="lead">Proven experience delivering results across diverse industries and business sectors.</p></div>
+    <p class="chips rv" data-split>SaaS | Education | Healthcare &amp; Clinics | Finance | Technology | Digital Marketing | Interior Design | Ayurveda &amp; Wellness | Tours &amp; Travel | Construction | Real estate</p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Academics</div><h2>Education</h2>
+      <p class="lead">An academic foundation that supports professional development.</p></div>
+    <div class="edu-grid">
+      <article class="card edu rv"><h3>MBA (Human Resources &amp; Marketing)</h3><p class="col">SCAD College of Engineering &amp; Technology, Tirunelveli</p><p class="meta">CGPA: 7.37 | 2023–2025</p></article>
+      <article class="card edu rv"><h3>B.Com (General)</h3><p class="col">Holy Cross Home Science College, Tuticorin</p><p class="meta">CGPA: 7.78 | 2020–2023</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="card contact-card rv">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Contact Details</h2>
+      <p class="lead">Let’s connect and explore how my expertise can contribute to your organisation’s growth.</p>
+      <div class="contact-grid">
+        <div class="c-item"><label>Number</label><span class="val">6383854232</span>
+          <div class="c-row"><a class="mini" href="tel:+916383854232">Call</a><button class="mini" data-copy="6383854232">Copy</button></div></div>
+        <div class="c-item"><label>Email</label><span class="val">devasangeetha15@gmail.com</span>
+          <div class="c-row"><a class="mini" href="mailto:devasangeetha15@gmail.com">Send email</a><button class="mini" data-copy="devasangeetha15@gmail.com">Copy</button></div></div>
+        <div class="c-item"><label>LinkedIn</label><span class="val">linkedin.com/in/deva-sangeetha</span>
+          <div class="c-row"><a class="mini" href="https://linkedin.com/in/deva-sangeetha" target="_blank" rel="noopener">Open profile ↗</a><button class="mini" data-copy="linkedin.com/in/deva-sangeetha">Copy</button></div></div>
+      </div>
+      <div class="cta" style="margin-top:30px">
+        <a class="btn primary" href="assets/Deva_Sangeetha_Resume.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Deva Sangeetha · Digital Marketing Executive</div></footer>
+
+<a class="totop" id="toTop" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <button class="x" id="lbX" aria-label="Close">✕</button>
+  <button class="pv" id="lbP" aria-label="Previous screenshot">‹</button>
+  <img id="lbImg" alt="">
+  <button class="nx" id="lbN" aria-label="Next screenshot">›</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+window.ICONS={
+"Google Search Console":{c:"#458CF5",s:"<path d=\"M8.548 1.156L6.832 2.872v1.682h1.716zm0 3.398v.035H6.832v-.035H3.386L0 7.844v3.577h2.826V8.94c0-.525.429-.954.954-.954h16.476c.525 0 .954.43.954.954v2.48h2.754V7.844l-3.386-3.29H17.3v.035h-1.717v-.035zm7.035 0H17.3V2.872l-1.717-1.716zM8.679 1.188V2.84h6.773V1.188zm11.471 7.07a.834.834 0 00-.132.01l-.543.002c-5.216.014-10.432-.008-15.648.01-.435-.063-.794.436-.716.883v2.264h17.812c-.016-.888.045-1.782-.034-2.666-.104-.342-.427-.502-.739-.502zm-15.422.634a.689.698 0 01.689.698.689.698 0 01-.689.697.689.698 0 01-.688-.697.689.698 0 01.688-.698zm2.134 0a.689.698 0 01.689.698.689.698 0 01-.689.697.689.698 0 01-.688-.697.689.698 0 01.688-.698zM.036 11.645v9.156c0 1.05.858 1.908 1.907 1.908h.883V11.645zm21.174 0v11.064h.882c1.05 0 1.908-.858 1.908-1.908v-9.156zM4.057 13.133v6.85h6.137v-6.85zm13.243.021v3.777l-1.708.977-1.708-.977v-3.758a4.006 4.006 0 000 7.23v2.441h3.457v-2.442a4.006 4.006 0 00-.041-7.248zm-13.243 8.26v1.43h7.925v-1.43z\"/>",f:1},
+"Google Analytics 4 (GA4)":{c:"#E37400",s:"<path d=\"M22.84 2.9982v17.9987c.0086 1.6473-1.3197 2.9897-2.967 2.9984a2.9808 2.9808 0 01-.3677-.0208c-1.528-.226-2.6477-1.5558-2.6105-3.1V3.1204c-.0369-1.5458 1.0856-2.8762 2.6157-3.1 1.6361-.1915 3.1178.9796 3.3093 2.6158.014.1201.0208.241.0202.3619zM4.1326 18.0548c-1.6417 0-2.9726 1.331-2.9726 2.9726C1.16 22.6691 2.4909 24 4.1326 24s2.9726-1.3309 2.9726-2.9726-1.331-2.9726-2.9726-2.9726zm7.8728-9.0098c-.0171 0-.0342 0-.0513.0003-1.6495.0904-2.9293 1.474-2.891 3.1256v7.9846c0 2.167.9535 3.4825 2.3505 3.763 1.6118.3266 3.1832-.7152 3.5098-2.327.04-.1974.06-.3983.0593-.5998v-8.9585c.003-1.6474-1.33-2.9852-2.9773-2.9882z\"/>",f:1},
+"Google Keyword Planner":{c:"#4285F4",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"M15.5 15.5 21 21\"/><path d=\"M8 12.5v-2M10.5 12.5v-5M13 12.5v-3\"/></g>",f:0},
+"Google Trends":{c:"#1A73E8",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 17l5-5 4 4 8-9\"/><path d=\"M15 7h5v5\"/></g>",f:0},
+"Ahrefs":{c:"#FF8C00",s:"<rect x=\"2.5\" y=\"2.5\" width=\"19\" height=\"19\" rx=\"5\" fill=\"currentColor\"/><path d=\"M8.2 17.2c-1.6 0-2.6-.9-2.6-2.2 0-1.4 1.1-2.2 3-2.2h1.7v-.3c0-.9-.5-1.3-1.5-1.3-.7 0-1.2.2-1.7.6l-.7-1.3c.7-.5 1.6-.8 2.7-.8 2 0 3 .9 3 2.8v4.6h-1.6l-.1-.6c-.5.5-1.2.7-2.2.7zm.5-1.3c.6 0 1.2-.3 1.5-.8v-.8H8.9c-.8 0-1.2.3-1.2.8 0 .5.4.8 1 .8z\" fill=\"#fff\"/><path d=\"M14.3 7h1.8v10.2h-1.8z\" fill=\"#fff\"/>",f:0},
+"Semrush":{c:"#FF642D",s:"<path d=\"M20.698 11.911c0 .444-.226.516-.79.516-.596 0-.706-.1-.77-.554-.118-1.152-.896-2.13-2.201-2.24-.418-.034-.518-.19-.518-.706 0-.48.074-.708.446-.708 2.265.01 3.833 1.832 3.833 3.69v.002zm3.3 0c0-3.456-2.338-7.11-7.74-7.11H5.52c-.218 0-.354.11-.354.31 0 .109.082.209.156.26.388.31.97.654 1.73 1.036.743.372 1.323.616 1.903.852.246.1.336.208.336.344 0 .19-.136.308-.4.308H.372c-.254 0-.372.164-.372.326 0 .136.044.254.162.372.69.726 1.796 1.596 3.4 2.604 1.466.91 2.98 1.74 4.533 2.492.236.11.308.236.308.372-.008.154-.126.28-.4.28H4.1c-.216 0-.344.12-.344.3 0 .1.08.226.19.326.888.808 2.311 1.688 4.207 2.494 2.53 1.08 5.094 1.721 7.98 1.721 5.465 0 7.867-4.087 7.867-7.289l-.002.002zm-7.133 5.104c-2.794 0-5.132-2.276-5.132-5.114 0-2.794 2.33-5.04 5.132-5.04 2.863 0 5.111 2.24 5.111 5.04a5.086 5.086 0 0 1-5.111 5.114z\"/>",f:1},
+"Screaming Frog SEO Spider":{c:"#6BBF3A",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"7.5\" cy=\"8\" r=\"3\"/><circle cx=\"16.5\" cy=\"8\" r=\"3\"/><path d=\"M3 18c1.5-4 5-6 9-6s7.5 2 9 6c-3 2.5-6 3-9 3s-6-.5-9-3z\"/><circle cx=\"7.5\" cy=\"8\" r=\".6\" fill=\"currentColor\"/><circle cx=\"16.5\" cy=\"8\" r=\".6\" fill=\"currentColor\"/></g>",f:0},
+"Moz":{c:"#1E9BF0",s:"<rect x=\"2.5\" y=\"2.5\" width=\"19\" height=\"19\" rx=\"5\" fill=\"currentColor\"/><path d=\"M6.5 17V7.5h1.8l3.7 5 3.7-5h1.8V17h-1.8v-6l-3.7 5-3.7-5v6z\" fill=\"#fff\"/>",f:0},
+"AnswerThePublic":{c:"#F5A623",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 5h16v11H11l-5 4v-4H4z\"/><path d=\"M9.6 9.3a2.4 2.4 0 1 1 3.4 2.2c-.7.4-1 .8-1 1.5\"/></g><circle cx=\"12\" cy=\"14\" r=\".1\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>",f:0},
+"AlsoAsked":{c:"#7C5CFF",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3.5\" width=\"12\" height=\"7\" rx=\"2\"/><rect x=\"9\" y=\"13.5\" width=\"12\" height=\"7\" rx=\"2\"/><path d=\"M7 10.5v3.5h2\"/></g>",f:0},
+"Google Business Profile":{c:"#34A853",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10V20h16V10\"/><path d=\"M3 10l1.5-6h15L21 10c0 1.7-1.3 3-3 3s-3-1.3-3-3c0 1.700-1.300 3-3 3s-3-1.300-3-3c0 1.700-1.300 3-3 3s-3-1.300-3-3z\"/><path d=\"M10 20v-5h4v5\"/></g>",f:0},
+"Google Rich Results Test":{c:"#EA4335",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"3\"/><path d=\"M7 9h6M7 13h3\"/><path d=\"M13 15l2.2 2.2L19 12.500\"/></g>",f:0},
+"PageSpeed Insights":{c:"#00C853",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 17a8.500 8.500 0 1 1 16 0\"/><path d=\"M12 17l4-5.500\"/><circle cx=\"12\" cy=\"17\" r=\"1.200\" fill=\"currentColor\"/></g>",f:0},
+"Rank Math SEO":{c:"#7A8CFF",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 20V13M10 20V8M16 20V11M22 20H2\"/><path d=\"M13 4l3-1.500 3 1.500-3 1.500z\" fill=\"currentColor\"/><path d=\"M16 5.500V9\"/></g>",f:0},
+"WordPress":{c:"#21759B",s:"<path d=\"M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0\"/>",f:1},
+"Grammarly":{c:"#027E6F",s:"<path d=\"M12 24H.032V12c0-3.314 1.341-6.314 3.504-8.486C5.703 1.344 8.694 0 12 0c3.305 0 6.297 1.344 8.463 3.514 2.164 2.172 3.505 5.172 3.505 8.486s-1.338 6.314-3.505 8.486C18.297 22.656 15.305 24 12 24m2.889-13.137-1.271 2.205h4.418c-.505 2.882-3.018 5.078-6.036 5.078-3.38 0-6.132-2.757-6.132-6.146S8.618 5.854 12 5.854c1.821 0 3.458.801 4.584 2.069l1.143-1.988c-1.493-1.418-3.506-2.29-5.725-2.29-4.6 0-8.332 3.74-8.332 8.355s3.73 8.354 8.332 8.354c4.603 0 8.332-3.739 8.332-8.354 0-.387-.029-.765-.079-1.137z\"/>",f:1},
+"Hemingway Editor":{c:"#3FA7FF",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 20l1-4L17.500 4.500a2.100 2.100 0 0 1 3 3L9 19z\"/><path d=\"M14.500 7.500l3 3\"/><path d=\"M3 21h8\"/></g>",f:0},
+"Duplichecker":{c:"#2EC4B6",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3.500\" y=\"3\" width=\"11\" height=\"14\" rx=\"2\"/><path d=\"M9 21h9a2.500 2.500 0 0 0 2.500-2.500V9\"/><path d=\"M7 8h4M7 11.500h4\"/></g>",f:0},
+"ZeroGPT":{c:"#FF5D8F",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"7\" width=\"16\" height=\"12\" rx=\"3.500\"/><path d=\"M12 7V4M9.500 4h5\"/><ellipse cx=\"9\" cy=\"13\" rx=\"1.300\" ry=\"1.900\"/><path d=\"M14 13h2.500\"/></g>",f:0},
+"Canva":{c:"#7D2AE8",s:"<defs><linearGradient id=\"cv\" x1=\"0\" y1=\"1\" x2=\"1\" y2=\"0\"><stop offset=\"0\" stop-color=\"#00C4CC\"/><stop offset=\"1\" stop-color=\"#7D2AE8\"/></linearGradient></defs><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"url(#cv)\"/><path d=\"M15.800 14.500c-.9 1.700-2.300 2.700-3.900 2.700-2.300 0-3.900-2-3.900-4.600 0-3 2-5 4.300-5 1.300 0 2.300.6 2.700 1.700\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.800\" stroke-linecap=\"round\"/>",f:0},
+"Claude":{c:"#D97757",s:"<path d=\"m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z\"/>",f:1},
+"Google Ads":{c:"#4285F4",s:"<path d=\"M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z\"/>",f:1},
+"Google Ads Keyword Planner":{c:"#FBBC04",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"6\"/><path d=\"M14.500 14.500 20 20\"/><path d=\"M10 7v6M7 10h6\"/></g>",f:0},
+"Google Tag Manager":{c:"#246FDB",s:"<path d=\"M12.003 0a3 3 0 0 0-2.121 5.121l6.865 6.865-4.446 4.541 1.745 1.836a3.432 3.432 0 0 1 .7.739l.012.011-.001.002a3.432 3.432 0 0 1 .609 1.953 3.432 3.432 0 0 1-.09.78l7.75-7.647c.031-.029.067-.05.098-.08.023-.023.038-.052.06-.076a2.994 2.994 0 0 0-.06-4.166l-9-9A2.99 2.99 0 0 0 12.003 0zM8.63 2.133L.88 9.809a2.998 2.998 0 0 0 0 4.238l7.7 7.75a3.432 3.432 0 0 1-.077-.729 3.432 3.432 0 0 1 3.431-3.431 3.432 3.432 0 0 1 .826.101l-5.523-5.81 4.371-4.373-2.08-2.08c-.903-.904-1.193-2.183-.898-3.342zm3.304 16.004a2.932 2.932 0 0 0-2.931 2.931A2.932 2.932 0 0 0 11.934 24a2.932 2.932 0 0 0 2.932-2.932 2.932 2.932 0 0 0-2.932-2.931z\"/>",f:1},
+"Meta Ads Manager":{c:"#0467DF",s:"<path d=\"M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z\"/>",f:1},
+"Meta Business Suite":{c:"#0A84FF",s:"<g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7.500\" width=\"18\" height=\"12.500\" rx=\"3\"/><path d=\"M8.500 7.500V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.500\"/><path d=\"M3 13h18\"/><path d=\"M11 13v1.800h2V13\"/></g>",f:0},
+};
+</script>
+<script>
+(function(){
+  var root=document.documentElement; root.classList.add('js');
+  var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+
+  /* chips from pipe-separated text */
+  $$('[data-split]').forEach(function(el){
+    var parts=el.textContent.split('|').map(function(s){return s.trim()}).filter(Boolean);
+    el.textContent=''; parts.forEach(function(t){var s=document.createElement('span');s.className='chip';s.textContent=t;el.appendChild(s)});
+  });
+
+  /* tools with their own icons */
+  var URLS={'Google Search Console':'https://search.google.com/search-console','Google Analytics 4 (GA4)':'https://analytics.google.com','Google Keyword Planner':'https://ads.google.com/home/tools/keyword-planner/','Google Trends':'https://trends.google.com','Ahrefs':'https://ahrefs.com','Semrush':'https://www.semrush.com','Screaming Frog SEO Spider':'https://www.screamingfrog.co.uk/seo-spider/','Moz':'https://moz.com','AnswerThePublic':'https://answerthepublic.com','AlsoAsked':'https://alsoasked.com','Google Business Profile':'https://www.google.com/business/','Google Rich Results Test':'https://search.google.com/test/rich-results','PageSpeed Insights':'https://pagespeed.web.dev','Rank Math SEO':'https://rankmath.com','WordPress':'https://wordpress.org','Grammarly':'https://www.grammarly.com','Hemingway Editor':'https://hemingwayapp.com','Duplichecker':'https://www.duplichecker.com','ZeroGPT':'https://www.zerogpt.com','Canva':'https://www.canva.com','Claude':'https://claude.ai','Google Ads':'https://ads.google.com','Google Ads Keyword Planner':'https://ads.google.com/home/tools/keyword-planner/','Google Tag Manager':'https://tagmanager.google.com','Meta Ads Manager':'https://adsmanager.facebook.com','Meta Business Suite':'https://business.facebook.com'};
+  var ICONS=window.ICONS||{};
+  $$('[data-tools]').forEach(function(box){
+    box.dataset.tools.split('|').forEach(function(n){
+      var ic=ICONS[n]||{c:'#2f6bff',s:'<circle cx="12" cy="12" r="8" fill="currentColor"/>'};
+      var a=document.createElement('a');a.className='tool rv';a.href=URLS[n]||'#';a.target='_blank';a.rel='noopener';
+      a.innerHTML='<span class="ic" style="color:'+ic.c+'"><svg viewBox="0 0 24 24" fill="'+(ic.f?'currentColor':'none')+'" aria-hidden="true">'+ic.s+'</svg></span><span class="nm"></span>';
+      a.querySelector('.nm').textContent=n; box.appendChild(a);
+    });
+  });
+
+  /* reveal on scroll (everything is force-revealed after 2.5s as a safety net) */
+  var rv=$$('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+  setTimeout(function(){rv.forEach(function(el){el.classList.add('in')})},2500);
+
+  /* count-up */
+  $$('[data-count]').forEach(function(el){
+    var end=+el.dataset.count,suf=el.dataset.suffix||'',t0=null;
+    function step(t){t0=t0||t;var p=Math.min((t-t0)/1400,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(end*e)+suf;if(p<1)requestAnimationFrame(step)}
+    requestAnimationFrame(step);
+  });
+
+  /* card spotlight */
+  $$('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+
+  /* nav */
+  var mb=$('#menuBtn'),links=$('#links');
+  function closeMenu(){links.classList.remove('open');mb.setAttribute('aria-expanded','false')}
+  mb.addEventListener('click',function(){var o=links.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  $$('a',links).forEach(function(a){a.addEventListener('click',closeMenu)});
+  var secs=$$('main section[id]');
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight,y=window.scrollY||h.scrollTop;
+    $('#progress').style.transform='scaleX('+(max>0?y/max:0)+')';
+    $('#toTop').classList.toggle('show',y>700);
+    var cur='';secs.forEach(function(s){if(s.getBoundingClientRect().top<140)cur=s.id});
+    $$('a',links).forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  /* copy buttons */
+  $$('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
+    var v=b.dataset.copy,old=b.textContent;
+    function ok(){b.textContent='Copied';setTimeout(function(){b.textContent=old},1400)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(b.closest('.c-item').querySelector('.val'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';setTimeout(function(){b.textContent=old},1400)}
+    try{navigator.clipboard.writeText(v).then(ok,fallback)}catch(e){fallback()}
+  })});
+
+  /* lightbox */
+  var shots=$$('[data-shot]'),lb=$('#lb'),lbImg=$('#lbImg'),lbCap=$('#lbCap'),idx=0;
+  function show(i){idx=(i+shots.length)%shots.length;var s=shots[idx],im=$('img',s);lbImg.src=im.currentSrc||im.src;lbImg.alt=im.alt;lbCap.textContent=s.dataset.cap+'  ·  '+(idx+1)+' / '+shots.length}
+  function open(i){show(i);lb.classList.add('open');document.body.style.overflow='hidden'}
+  function close(){lb.classList.remove('open');document.body.style.overflow=''}
+  shots.forEach(function(s,i){s.addEventListener('click',function(){open(i)})});
+  $('#lbX').onclick=close;$('#lbP').onclick=function(){show(idx-1)};$('#lbN').onclick=function(){show(idx+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
+  var tx=null;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){if(tx===null)return;var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(idx+(d<0?1:-1));tx=null});
+
+  /* custom cursor (fine pointers only) */
+  if(window.matchMedia('(hover:hover) and (pointer:fine)').matches && !window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    root.classList.add('has-cursor');
+    var dot=$('#curDot'),ring=$('#curRing'),mx=-100,my=-100,rx=-100,ry=-100,lastSpark=0;
+    document.addEventListener('mousemove',function(e){
+      mx=e.clientX;my=e.clientY;dot.style.transform='translate('+mx+'px,'+my+'px)';
+      var now=Date.now();if(now-lastSpark>55){lastSpark=now;var s=document.createElement('i');s.className='spark';s.style.left=mx+'px';s.style.top=my+'px';s.style.setProperty('--dx',(Math.random()*36-18)+'px');s.style.setProperty('--dy',(Math.random()*36-18)+'px');document.body.appendChild(s);setTimeout(function(){s.remove()},700)}
+    });
+    (function loop(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;ring.style.transform='translate('+rx+'px,'+ry+'px)';requestAnimationFrame(loop)})();
+    document.addEventListener('mouseover',function(e){ring.classList.toggle('hot',!!e.target.closest('a,button,.shot,.chip,.stat'))});
+    document.addEventListener('mousedown',function(){ring.classList.add('down')});
+    document.addEventListener('mouseup',function(){ring.classList.remove('down')});
+    document.addEventListener('mouseleave',function(){dot.style.opacity=0;ring.style.opacity=0});
+    document.addEventListener('mouseenter',function(){dot.style.opacity='';ring.style.opacity=''});
+  }
+})();
+</script>
+
+</body></html>
